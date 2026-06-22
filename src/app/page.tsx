@@ -170,7 +170,7 @@ export default function Home() {
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {/* DIRECIONAR */}
-            <div className="group relative rounded-2xl border border-gold/10 bg-gradient-to-b from-white/[0.04] to-transparent p-8 transition-all hover:border-gold/30 hover:shadow-[0_0_40px_rgba(201,154,17,0.08)]">
+            <div className="group relative rounded-2xl border border-gold/30 bg-gradient-to-b from-white/[0.04] to-transparent p-8 shadow-[0_0_15px_rgba(201,154,17,0.12)] transition-all hover:border-gold/50 hover:shadow-[0_0_30px_rgba(201,154,17,0.2)]">
               <span className="absolute top-4 right-5 text-6xl font-extrabold text-white/[0.04]">D</span>
               <div className="mx-auto w-24 h-24">
                 <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,7 +203,7 @@ export default function Home() {
             </div>
 
             {/* NUTRIR CONEXÕES */}
-            <div className="group relative rounded-2xl border border-gold/10 bg-gradient-to-b from-white/[0.04] to-transparent p-8 transition-all hover:border-gold/30 hover:shadow-[0_0_40px_rgba(201,154,17,0.08)]">
+            <div className="group relative rounded-2xl border border-gold/30 bg-gradient-to-b from-white/[0.04] to-transparent p-8 shadow-[0_0_15px_rgba(201,154,17,0.12)] transition-all hover:border-gold/50 hover:shadow-[0_0_30px_rgba(201,154,17,0.2)]">
               <span className="absolute top-4 right-5 text-6xl font-extrabold text-white/[0.04]">N</span>
               <div className="mx-auto w-24 h-24">
                 <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -238,7 +238,7 @@ export default function Home() {
             </div>
 
             {/* AUTOLIDERANÇA */}
-            <div className="group relative rounded-2xl border border-gold/10 bg-gradient-to-b from-white/[0.04] to-transparent p-8 transition-all hover:border-gold/30 hover:shadow-[0_0_40px_rgba(201,154,17,0.08)]">
+            <div className="group relative rounded-2xl border border-gold/30 bg-gradient-to-b from-white/[0.04] to-transparent p-8 shadow-[0_0_15px_rgba(201,154,17,0.12)] transition-all hover:border-gold/50 hover:shadow-[0_0_30px_rgba(201,154,17,0.2)]">
               <span className="absolute top-4 right-5 text-6xl font-extrabold text-white/[0.04]">A</span>
               <div className="mx-auto w-24 h-24">
                 <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -270,14 +270,6 @@ export default function Home() {
             </div>
           </div>
 
-          <p
-            className="mx-auto mt-14 max-w-xl text-center text-xl font-medium text-white"
-            style={{ fontFamily: "var(--font-playfair), serif" }}
-          >
-            &ldquo;Liderança não é um cargo.{" "}
-            <span className="gradient-text">Liderança é uma habilidade.</span>
-            &rdquo;
-          </p>
         </div>
       </section>
 
