@@ -155,8 +155,9 @@ export default function Home() {
         <div className="relative mx-auto max-w-5xl px-6 py-10 md:py-12">
 
           <SectionTitle>
-            Conheça o método que cobre tudo que um líder precisa{" "}
-            <span className="gradient-text">desenvolver para ter sucesso</span>
+            Conheça o método que{" "}
+            <span className="gradient-text">cobre tudo que um líder precisa</span>{" "}
+            desenvolver para ter sucesso
           </SectionTitle>
           <p className="mx-auto mt-5 max-w-2xl text-center text-lg text-white/80">
             <span className="text-white font-semibold underline">
