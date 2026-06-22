@@ -169,115 +169,105 @@ export default function Home() {
           </p>
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
-            {[
-              {
-                letter: "D",
-                title: "Direcionar",
-                subtitle:
-                  "Como gerar clareza, alinhamento e resultados através da equipe",
-                points: [
-                  "A diferença entre ser técnico e ser líder",
-                  "Os 4 alinhamentos que todo líder precisa fazer",
-                  "Como delegar sem abandonar e sem microgerenciar",
-                ],
-                icon: (
-                  <svg
-                    className="h-8 w-8 text-gold"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.5}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"
-                    />
-                  </svg>
-                ),
-              },
-              {
-                letter: "N",
-                title: "Nutrir Conexões",
-                subtitle:
-                  "Como construir confiança, engajamento e influência",
-                points: [
-                  "Por que algumas equipes entregam mais que outras",
-                  "Comunicação assertiva e escuta ativa (Regra 70/30)",
-                  "Como dar feedback sem desmotivar",
-                ],
-                icon: (
-                  <svg
-                    className="h-8 w-8 text-gold"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.5}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
-                    />
-                  </svg>
-                ),
-              },
-              {
-                letter: "A",
-                title: "Autoliderança",
-                subtitle:
-                  "Como liderar a si mesmo para liderar melhor os outros",
-                points: [
-                  "O impacto do seu comportamento na equipe",
-                  "Inteligência emocional na prática",
-                  "Mapa de Pontos Fortes e Gaps + Plano de Evolução",
-                ],
-                icon: (
-                  <svg
-                    className="h-8 w-8 text-gold"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.5}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
-                    />
-                  </svg>
-                ),
-              },
-            ].map((p) => (
-              <div
-                key={p.letter}
-                className="group relative rounded-2xl border border-gold/10 bg-gradient-to-b from-white/[0.04] to-transparent p-8 transition-all hover:border-gold/30 hover:shadow-[0_0_40px_rgba(201,154,17,0.08)]"
-              >
-                <span className="absolute top-4 right-5 text-6xl font-extrabold text-white/[0.04]">
-                  {p.letter}
-                </span>
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gold/10 transition-colors group-hover:bg-gold/20">
-                  {p.icon}
-                </div>
-                <h3 className="mt-6 text-center text-xl font-bold text-white">
-                  {p.title}
-                </h3>
-                <p className="mt-2 text-center text-sm text-gold/80">
-                  {p.subtitle}
-                </p>
-                <ul className="mt-4 space-y-2">
-                  {p.points.map((point, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-2 text-sm text-white/70"
-                    >
-                      <span className="mt-1 text-gold text-xs">&#9670;</span>
-                      {point}
-                    </li>
-                  ))}
-                </ul>
+            {/* DIRECIONAR */}
+            <div className="group relative rounded-2xl border border-gold/10 bg-gradient-to-b from-white/[0.04] to-transparent p-8 transition-all hover:border-gold/30 hover:shadow-[0_0_40px_rgba(201,154,17,0.08)]">
+              <span className="absolute top-4 right-5 text-6xl font-extrabold text-white/[0.04]">D</span>
+              <div className="mx-auto w-24 h-24">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Bússola/direção */}
+                  <circle cx="60" cy="60" r="50" stroke="#c99a11" strokeWidth="2" opacity="0.3"/>
+                  <circle cx="60" cy="60" r="38" stroke="#c99a11" strokeWidth="1.5" opacity="0.15"/>
+                  {/* Ponteiro norte */}
+                  <path d="M60 18L68 55H52L60 18Z" fill="#c99a11" opacity="0.9"/>
+                  {/* Ponteiro sul */}
+                  <path d="M60 102L52 65H68L60 102Z" fill="#c99a11" opacity="0.3"/>
+                  {/* Centro */}
+                  <circle cx="60" cy="60" r="6" fill="#c99a11"/>
+                  <circle cx="60" cy="60" r="3" fill="#0a0c12"/>
+                  {/* Marcadores cardinais */}
+                  <line x1="60" y1="12" x2="60" y2="18" stroke="#c99a11" strokeWidth="2" opacity="0.5"/>
+                  <line x1="60" y1="102" x2="60" y2="108" stroke="#c99a11" strokeWidth="2" opacity="0.5"/>
+                  <line x1="12" y1="60" x2="18" y2="60" stroke="#c99a11" strokeWidth="2" opacity="0.5"/>
+                  <line x1="102" y1="60" x2="108" y2="60" stroke="#c99a11" strokeWidth="2" opacity="0.5"/>
+                </svg>
               </div>
-            ))}
+              <h3 className="mt-4 text-center text-xl font-bold text-white">Direcionar</h3>
+              <p className="mt-2 text-center text-sm text-gold/80">Como gerar clareza, alinhamento e resultados através da equipe</p>
+              <ul className="mt-4 space-y-2">
+                {["A diferença entre ser técnico e ser líder","Os 4 alinhamentos que todo líder precisa fazer","Como delegar sem abandonar e sem microgerenciar"].map((point, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-white/70">
+                    <span className="mt-1 text-gold text-xs">&#9670;</span>{point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* NUTRIR CONEXÕES */}
+            <div className="group relative rounded-2xl border border-gold/10 bg-gradient-to-b from-white/[0.04] to-transparent p-8 transition-all hover:border-gold/30 hover:shadow-[0_0_40px_rgba(201,154,17,0.08)]">
+              <span className="absolute top-4 right-5 text-6xl font-extrabold text-white/[0.04]">N</span>
+              <div className="mx-auto w-24 h-24">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Pessoa central */}
+                  <circle cx="60" cy="35" r="10" fill="#c99a11" opacity="0.9"/>
+                  <path d="M45 58C45 50 52 45 60 45C68 45 75 50 75 58V62H45V58Z" fill="#c99a11" opacity="0.7"/>
+                  {/* Pessoa esquerda */}
+                  <circle cx="28" cy="55" r="8" fill="#c99a11" opacity="0.4"/>
+                  <path d="M16 73C16 67 21 63 28 63C35 63 40 67 40 73V76H16V73Z" fill="#c99a11" opacity="0.3"/>
+                  {/* Pessoa direita */}
+                  <circle cx="92" cy="55" r="8" fill="#c99a11" opacity="0.4"/>
+                  <path d="M80 73C80 67 85 63 92 63C99 63 104 67 104 73V76H80V73Z" fill="#c99a11" opacity="0.3"/>
+                  {/* Linhas de conexão */}
+                  <line x1="45" y1="50" x2="36" y2="55" stroke="#c99a11" strokeWidth="1.5" opacity="0.4" strokeDasharray="3 3"/>
+                  <line x1="75" y1="50" x2="84" y2="55" stroke="#c99a11" strokeWidth="1.5" opacity="0.4" strokeDasharray="3 3"/>
+                  {/* Pulso de conexão */}
+                  <circle cx="60" cy="50" r="28" stroke="#c99a11" strokeWidth="1" opacity="0.15"/>
+                  <circle cx="60" cy="50" r="40" stroke="#c99a11" strokeWidth="0.8" opacity="0.08"/>
+                  {/* Coração pequeno no centro */}
+                  <path d="M56 85C56 85 53 82 53 80C53 78.5 54.5 77 56 77C57 77 58 77.5 58.5 78.5C59 77.5 60 77 61 77C62.5 77 64 78.5 64 80C64 82 61 85 58.5 87.5C56 85 56 85 56 85Z" fill="#c99a11" opacity="0.5"/>
+                </svg>
+              </div>
+              <h3 className="mt-4 text-center text-xl font-bold text-white">Nutrir Conexões</h3>
+              <p className="mt-2 text-center text-sm text-gold/80">Como construir confiança, engajamento e influência</p>
+              <ul className="mt-4 space-y-2">
+                {["Por que algumas equipes entregam mais que outras","Comunicação assertiva e escuta ativa (Regra 70/30)","Como dar feedback sem desmotivar"].map((point, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-white/70">
+                    <span className="mt-1 text-gold text-xs">&#9670;</span>{point}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* AUTOLIDERANÇA */}
+            <div className="group relative rounded-2xl border border-gold/10 bg-gradient-to-b from-white/[0.04] to-transparent p-8 transition-all hover:border-gold/30 hover:shadow-[0_0_40px_rgba(201,154,17,0.08)]">
+              <span className="absolute top-4 right-5 text-6xl font-extrabold text-white/[0.04]">A</span>
+              <div className="mx-auto w-24 h-24">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  {/* Silhueta da pessoa */}
+                  <circle cx="60" cy="40" r="14" fill="#c99a11" opacity="0.8"/>
+                  <path d="M38 75C38 62 48 54 60 54C72 54 82 62 82 75V80H38V75Z" fill="#c99a11" opacity="0.5"/>
+                  {/* Aura / brilho interno */}
+                  <circle cx="60" cy="55" r="32" stroke="#c99a11" strokeWidth="1.5" opacity="0.2"/>
+                  <circle cx="60" cy="55" r="42" stroke="#c99a11" strokeWidth="1" opacity="0.1"/>
+                  {/* Estrela acima da cabeça */}
+                  <path d="M60 8L62.5 18L72 16L65 23L72 30L62.5 28L60 38L57.5 28L48 30L55 23L48 16L57.5 18L60 8Z" fill="#c99a11" opacity="0.6"/>
+                  {/* Raios de luz */}
+                  <line x1="60" y1="90" x2="60" y2="100" stroke="#c99a11" strokeWidth="1.5" opacity="0.3"/>
+                  <line x1="35" y1="85" x2="28" y2="92" stroke="#c99a11" strokeWidth="1.5" opacity="0.2"/>
+                  <line x1="85" y1="85" x2="92" y2="92" stroke="#c99a11" strokeWidth="1.5" opacity="0.2"/>
+                  <line x1="25" y1="60" x2="15" y2="60" stroke="#c99a11" strokeWidth="1.5" opacity="0.15"/>
+                  <line x1="95" y1="60" x2="105" y2="60" stroke="#c99a11" strokeWidth="1.5" opacity="0.15"/>
+                </svg>
+              </div>
+              <h3 className="mt-4 text-center text-xl font-bold text-white">Autoliderança</h3>
+              <p className="mt-2 text-center text-sm text-gold/80">Como liderar a si mesmo para liderar melhor os outros</p>
+              <ul className="mt-4 space-y-2">
+                {["O impacto do seu comportamento na equipe","Inteligência emocional na prática","Mapa de Pontos Fortes e Gaps + Plano de Evolução"].map((point, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-white/70">
+                    <span className="mt-1 text-gold text-xs">&#9670;</span>{point}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <p
