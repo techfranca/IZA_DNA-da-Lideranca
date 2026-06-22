@@ -334,56 +334,48 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════ 5. O QUE VOCÊ VAI RECEBER ═══════ */}
+      {/* ═══════ 5. O QUE VOCÊ VAI APRENDER ═══════ */}
       <section className="relative w-full bg-dark">
-        <div className="relative mx-auto max-w-3xl px-6 py-10 md:py-12">
-
+        <div className="relative mx-auto max-w-4xl px-4 sm:px-6 py-10 md:py-12">
           <SectionTitle>
-            O que você vai aprender{" "}
+            O que você vai encontrar{" "}
             <span className="text-gold">dentro do DNA</span>
           </SectionTitle>
-
-          <div className="mt-12 space-y-4">
-            {[
-              {
-                num: "01",
-                letter: "D",
-                title: "Direcionar",
-                desc: "Aprenda a dar clareza pro seu time, alinhar expectativas e gerar resultados sem precisar fazer tudo sozinho. Chega de centralizar e apagar incêndio.",
-              },
-              {
-                num: "02",
-                letter: "N",
-                title: "Nutrir Conexões",
-                desc: "Descubra como construir confiança genuína, se comunicar com assertividade e dar feedbacks que motivam em vez de desmotivar. Seu time vai querer te seguir.",
-              },
-              {
-                num: "03",
-                letter: "A",
-                title: "Autoliderança",
-                desc: "Conheça seus pontos fortes e gaps como líder, desenvolva inteligência emocional e crie um plano concreto de evolução para os próximos 30 dias.",
-              },
-            ].map((mod) => (
-              <div
-                key={mod.num}
-                className="relative flex items-start gap-5 rounded-2xl border border-gold/10 bg-white/[0.03] px-6 py-6 transition-all hover:border-gold/25"
-              >
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-lg font-bold text-gold">
-                  {mod.letter}
-                </span>
-                <div>
-                  <h3 className="text-lg font-bold text-white">{mod.title}</h3>
-                  <p className="mt-2 text-white/75 leading-relaxed">{mod.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <p className="mt-10 text-center text-sm text-white/50">
-            3 módulos &bull; 9 aulas gravadas de 20-30 min &bull; Exercícios práticos &bull; Ferramentas aplicáveis
+          <p className="mt-4 text-center text-base text-white/50 max-w-2xl mx-auto">
+            3 módulos, 9 aulas gravadas de 20-30 min, exercícios práticos e ferramentas aplicáveis
           </p>
 
-          <div className="mt-10 text-center">
+          <div className="mt-10 space-y-3">
+            {/* Módulo 1 */}
+            <Accordion number="01" title="D — Direcionar: Clareza e resultados">
+              <div className="text-sm text-white/70 space-y-1">
+                <p>Você foi promovido. E agora? &bull; A diferença entre técnico e líder &bull; Os 4 alinhamentos que todo líder precisa fazer &bull; Delegar sem abandonar e sem microgerenciar &bull; Como desenvolver autonomia no time</p>
+                <p className="text-gold text-xs mt-2">+ Exercício prático: redefinir atividade com os 4 alinhamentos</p>
+              </div>
+            </Accordion>
+
+            {/* Módulo 2 */}
+            <Accordion number="02" title="N — Nutrir Conexões: Confiança e influência">
+              <div className="text-sm text-white/70 space-y-1">
+                <p>O poder das conexões &bull; Por que algumas equipes entregam mais &bull; Comunicação assertiva e escuta ativa &bull; Regra 70/30 &bull; Feedback e reconhecimento &bull; Como corrigir sem desmotivar</p>
+                <p className="text-gold text-xs mt-2">+ Exercício prático: conversa individual com 4 perguntas estratégicas</p>
+              </div>
+            </Accordion>
+
+            {/* Módulo 3 */}
+            <Accordion number="03" title="A — Autoliderança: Liderar a si mesmo">
+              <div className="text-sm text-white/70 space-y-1">
+                <p>O líder que você é hoje &bull; Impacto do seu comportamento na equipe &bull; Inteligência emocional na prática &bull; Como agir sob pressão &bull; Mapa dos Pontos Fortes e Gaps &bull; Balança da Liderança</p>
+                <p className="text-gold text-xs mt-2">+ Exercício prático: Plano de Evolução para os próximos 30 dias</p>
+              </div>
+            </Accordion>
+          </div>
+
+          <p className="mt-8 text-center text-sm text-white/40">
+            + Ferramentas exclusivas: Regra 70/30, Modelo de Feedback, Balança da Liderança e Plano de Evolução
+          </p>
+
+          <div className="mt-8 text-center">
             <CTAButton>QUERO TER ACESSO AO CONTEÚDO &rarr;</CTAButton>
           </div>
         </div>
