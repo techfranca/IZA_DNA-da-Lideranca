@@ -87,7 +87,7 @@ export default function Home() {
           <img
             src="/hero-dna.png"
             alt="DNA da Liderança"
-            className="mx-auto mt-10 w-full max-w-sm rounded-2xl border border-gold/15 shadow-2xl shadow-gold/10"
+            className="mx-auto mt-10 w-full max-w-[200px] md:max-w-sm rounded-2xl border border-gold/15 shadow-2xl shadow-gold/10"
           />
 
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
