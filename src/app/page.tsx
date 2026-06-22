@@ -1,5 +1,6 @@
 import { Accordion } from "./components/Accordion";
 import { ContentModules } from "./components/ContentModules";
+import { Depoimentos } from "./components/Depoimentos";
 
 const CHECKOUT_URL = "#"; // TODO: substituir pelo link de checkout Hotmart
 
@@ -366,16 +367,7 @@ export default function Home() {
             Prints reais de profissionais que foram desenvolvidos por ela
           </p>
 
-          <div className="mt-12 columns-2 gap-4 md:columns-3">
-            {Array.from({ length: 17 }, (_, i) => (
-              <img
-                key={i}
-                src={`/depoimentos/dep-${i + 1}.png`}
-                alt={`Depoimento ${i + 1}`}
-                className="mb-4 w-full rounded-xl border border-white/10 shadow-lg"
-              />
-            ))}
-          </div>
+          <Depoimentos />
 
           <div className="mt-12 text-center">
             <CTAButton>QUERO O MESMO RESULTADO &rarr;</CTAButton>
