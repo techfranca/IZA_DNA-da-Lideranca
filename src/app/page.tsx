@@ -346,33 +346,25 @@ export default function Home() {
           </p>
 
           <div className="mt-10 space-y-3">
-            {/* Módulo 1 */}
-            <Accordion number="01" title="D — Direcionar: Clareza e resultados">
-              <div className="text-sm text-white/70 space-y-1">
-                <p>Você foi promovido. E agora? &bull; A diferença entre técnico e líder &bull; Os 4 alinhamentos que todo líder precisa fazer &bull; Delegar sem abandonar e sem microgerenciar &bull; Como desenvolver autonomia no time</p>
-                <p className="text-gold text-xs mt-2">+ Exercício prático: redefinir atividade com os 4 alinhamentos</p>
-              </div>
-            </Accordion>
-
-            {/* Módulo 2 */}
-            <Accordion number="02" title="N — Nutrir Conexões: Confiança e influência">
-              <div className="text-sm text-white/70 space-y-1">
-                <p>O poder das conexões &bull; Por que algumas equipes entregam mais &bull; Comunicação assertiva e escuta ativa &bull; Regra 70/30 &bull; Feedback e reconhecimento &bull; Como corrigir sem desmotivar</p>
-                <p className="text-gold text-xs mt-2">+ Exercício prático: conversa individual com 4 perguntas estratégicas</p>
-              </div>
-            </Accordion>
-
-            {/* Módulo 3 */}
-            <Accordion number="03" title="A — Autoliderança: Liderar a si mesmo">
-              <div className="text-sm text-white/70 space-y-1">
-                <p>O líder que você é hoje &bull; Impacto do seu comportamento na equipe &bull; Inteligência emocional na prática &bull; Como agir sob pressão &bull; Mapa dos Pontos Fortes e Gaps &bull; Balança da Liderança</p>
-                <p className="text-gold text-xs mt-2">+ Exercício prático: Plano de Evolução para os próximos 30 dias</p>
-              </div>
-            </Accordion>
+            {[
+              { num: "01", title: "Você foi promovido. E agora?", desc: "O erro mais comum dos novos líderes · A diferença entre ser técnico e ser líder · O verdadeiro papel da liderança" },
+              { num: "02", title: "Os 4 alinhamentos que todo líder precisa fazer", desc: "O que precisa ser feito · Quem fará · Até quando · Como saberemos que deu certo" },
+              { num: "03", title: "Delegar não é abandonar", desc: "Por que os líderes centralizam · Os prejuízos de fazer tudo sozinho · Como acompanhar sem microgerenciar" },
+              { num: "04", title: "O poder das conexões na liderança", desc: "Por que algumas equipes entregam mais · Confiança como base · Os erros que afastam os liderados" },
+              { num: "05", title: "Comunicação que aproxima", desc: "Comunicação assertiva · Escuta ativa · Regra 70/30 · Como garantir entendimento" },
+              { num: "06", title: "Feedback e reconhecimento", desc: "O que é e o que não é feedback · Como corrigir sem desmotivar · Modelo: Situação → Comportamento → Impacto → Próximo passo" },
+              { num: "07", title: "O líder que você é hoje", desc: "O impacto do seu comportamento · Como seus pontos fortes influenciam a equipe · A importância do autoconhecimento" },
+              { num: "08", title: "Inteligência emocional na prática", desc: "Como reconhecer emoções · Como evitar reações impulsivas · Como agir sob pressão em situações reais" },
+              { num: "09", title: "Mapa dos Pontos Fortes e Gaps", desc: "Ferramenta Balança da Liderança · Identificação de forças e gaps · Plano de Evolução com ações para os próximos 30 dias" },
+            ].map((aula) => (
+              <Accordion key={aula.num} number={aula.num} title={aula.title}>
+                <p className="text-sm text-white/70">{aula.desc}</p>
+              </Accordion>
+            ))}
           </div>
 
           <p className="mt-8 text-center text-sm text-white/40">
-            + Ferramentas exclusivas: Regra 70/30, Modelo de Feedback, Balança da Liderança e Plano de Evolução
+            + Exercícios práticos ao final de cada módulo e ferramentas exclusivas aplicáveis no dia a dia
           </p>
 
           <div className="mt-8 text-center">
