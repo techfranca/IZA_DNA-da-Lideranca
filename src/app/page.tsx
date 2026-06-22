@@ -280,10 +280,14 @@ export default function Home() {
 
           <SectionTitle>
             Criado por quem{" "}
-            <span className="text-gold">entende de liderança na prática</span>
+            <span className="text-gold">entende de liderança</span>
+            <br />na prática
           </SectionTitle>
+          <p className="mt-3 text-center text-sm text-white/50">
+            Conheça quem está por trás do método:
+          </p>
 
-          <div className="mt-12 flex flex-col items-center gap-12 md:flex-row md:items-start">
+          <div className="mt-10 flex flex-col items-center gap-12 md:flex-row md:items-start">
             <div className="relative shrink-0">
               <div className="glow-ring h-72 w-72 overflow-hidden rounded-2xl border border-gold/20">
                 <img
@@ -299,8 +303,11 @@ export default function Home() {
                 className="text-2xl font-bold text-white md:text-3xl"
                 style={{ fontFamily: "var(--font-playfair), serif" }}
               >
-                Izabela <span className="text-gold">Holanda</span>
+                Me. Izabela Holanda
               </h3>
+              <p className="mt-1 text-sm font-medium text-gold">
+                Especialista em Liderança e Psicologia Positiva
+              </p>
 
               <div className="mt-6 space-y-4">
                 {[
