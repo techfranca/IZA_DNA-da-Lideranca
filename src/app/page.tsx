@@ -136,7 +136,7 @@ export default function Home() {
             ].map((dor, i) => (
               <div
                 key={i}
-                className="glass-card flex items-start gap-4 rounded-xl px-6 py-5"
+                className="glass-card flex items-start gap-4 rounded-xl px-6 py-5 border border-white/10"
               >
                 <span className="text-2xl">{dor.icon}</span>
                 <p className="text-base text-white/90">{dor.text}</p>
