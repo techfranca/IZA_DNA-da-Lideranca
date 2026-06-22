@@ -27,7 +27,7 @@ export function Depoimentos() {
         <div className="mt-8 text-center">
           <p className="text-sm text-white/40 mb-4">
             {stage === 0
-              ? `E esses são apenas alguns... ainda tem mais ${TOTAL - 4} depoimentos reais`
+              ? "E esses são apenas alguns... ainda tem muito mais"
               : `Mais ${remaining} depoimentos de líderes transformados`}
           </p>
           <button
