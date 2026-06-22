@@ -80,7 +80,7 @@ export default function Home() {
           >
             Descubra as 3 habilidades que todo líder de sucesso desenvolveu para{" "}
             <span className="gradient-text">
-              conquistar respeito, engajar o time e entregar resultados
+              engajar o time e entregar resultados
             </span>
           </h1>
 
