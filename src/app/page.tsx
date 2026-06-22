@@ -279,9 +279,9 @@ export default function Home() {
         <div className="relative mx-auto max-w-5xl px-6 py-10 md:py-12">
 
           <SectionTitle>
-            Criado por quem{" "}
-            <span className="text-gold">entende de liderança</span>
-            <br />na prática
+            Criado por quem <span className="text-gold">entende</span>
+            <br />
+            <span className="text-gold">de liderança na prática</span>
           </SectionTitle>
           <p className="mt-3 text-center text-sm text-white/50">
             Conheça quem está por trás do método:
