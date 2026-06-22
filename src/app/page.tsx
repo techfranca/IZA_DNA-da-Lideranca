@@ -303,7 +303,7 @@ export default function Home() {
                 className="text-2xl font-bold text-white md:text-3xl"
                 style={{ fontFamily: "var(--font-playfair), serif" }}
               >
-                Me. Izabela Holanda
+                Mestra Izabela Holanda
               </h3>
               <p className="mt-1 text-sm font-medium text-gold">
                 Especialista em Liderança e Psicologia Positiva
