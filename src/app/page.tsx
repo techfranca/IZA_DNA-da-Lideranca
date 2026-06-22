@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Accordion } from "./components/Accordion";
 import { ContentModules } from "./components/ContentModules";
 import { Depoimentos } from "./components/Depoimentos";
@@ -87,12 +86,13 @@ export default function Home() {
             </span>
           </h1>
 
-          <Image
+          <img
             src="/hero-dna.webp"
             alt="DNA da Liderança"
             width={600}
             height={400}
-            priority
+            fetchPriority="high"
+            decoding="async"
             className="mx-auto mt-10 w-full max-w-[200px] md:max-w-sm rounded-2xl border border-gold/15 shadow-2xl shadow-gold/10"
           />
 
@@ -296,12 +296,13 @@ export default function Home() {
           <div className="mt-10 flex flex-col items-center gap-12 md:flex-row md:items-start">
             <div className="relative shrink-0">
               <div className="glow-ring h-72 w-72 overflow-hidden rounded-2xl border border-gold/20">
-                <Image
+                <img
                   src="/izabela.webp"
                   alt="Izabela Holanda"
                   width={400}
                   height={400}
                   loading="lazy"
+                  decoding="async"
                   className="h-full w-full object-cover object-top"
                 />
               </div>
