@@ -192,10 +192,10 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="mt-4 text-center text-xl font-bold text-white">Direcionar</h3>
-              <p className="mt-2 text-center text-sm text-gold/80">Como gerar clareza, alinhamento e resultados através da equipe</p>
+              <p className="mt-2 text-center text-sm text-gold">Como gerar clareza, alinhamento e resultados através da equipe</p>
               <ul className="mt-4 space-y-2">
                 {["A diferença entre ser técnico e ser líder","Os 4 alinhamentos que todo líder precisa fazer","Como delegar sem abandonar e sem microgerenciar"].map((point, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-white/70">
+                  <li key={i} className="flex items-start gap-2 text-sm text-white">
                     <span className="mt-1 text-gold text-xs">&#9670;</span>{point}
                   </li>
                 ))}
@@ -227,10 +227,10 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="mt-4 text-center text-xl font-bold text-white">Nutrir Conexões</h3>
-              <p className="mt-2 text-center text-sm text-gold/80">Como construir confiança, engajamento e influência</p>
+              <p className="mt-2 text-center text-sm text-gold">Como construir confiança, engajamento e influência</p>
               <ul className="mt-4 space-y-2">
                 {["Por que algumas equipes entregam mais que outras","Comunicação assertiva e escuta ativa (Regra 70/30)","Como dar feedback sem desmotivar"].map((point, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-white/70">
+                  <li key={i} className="flex items-start gap-2 text-sm text-white">
                     <span className="mt-1 text-gold text-xs">&#9670;</span>{point}
                   </li>
                 ))}
@@ -259,10 +259,10 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="mt-4 text-center text-xl font-bold text-white">Autoliderança</h3>
-              <p className="mt-2 text-center text-sm text-gold/80">Como liderar a si mesmo para liderar melhor os outros</p>
+              <p className="mt-2 text-center text-sm text-gold">Como liderar a si mesmo para liderar melhor os outros</p>
               <ul className="mt-4 space-y-2">
                 {["O impacto do seu comportamento na equipe","Inteligência emocional na prática","Mapa de Pontos Fortes e Gaps + Plano de Evolução"].map((point, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-white/70">
+                  <li key={i} className="flex items-start gap-2 text-sm text-white">
                     <span className="mt-1 text-gold text-xs">&#9670;</span>{point}
                   </li>
                 ))}
