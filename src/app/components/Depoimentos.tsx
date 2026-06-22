@@ -16,8 +16,9 @@ export function Depoimentos() {
         {Array.from({ length: visible }, (_, i) => (
           <img
             key={i}
-            src={`/depoimentos/dep-${i + 1}.png`}
+            src={`/depoimentos/dep-${i + 1}.webp`}
             alt={`Depoimento ${i + 1}`}
+            loading="lazy"
             className="mb-4 w-full rounded-xl border border-white/10 shadow-lg"
           />
         ))}
