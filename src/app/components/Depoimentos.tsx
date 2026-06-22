@@ -12,13 +12,13 @@ export function Depoimentos() {
 
   return (
     <>
-      <div className="mt-12 columns-2 gap-4 md:columns-3">
+      <div className="mt-12 flex flex-col gap-4 items-center md:columns-2 md:block">
         {Array.from({ length: visible }, (_, i) => (
           <img
             key={i}
             src={`/depoimentos/dep-${i + 1}.png`}
             alt={`Depoimento ${i + 1}`}
-            className="mb-4 w-full rounded-xl border border-white/10 shadow-lg"
+            className="mb-4 w-full max-w-md rounded-xl border border-white/10 shadow-lg"
           />
         ))}
       </div>
