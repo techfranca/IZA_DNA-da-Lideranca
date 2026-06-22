@@ -26,7 +26,7 @@ const CTAButton = ({
 }) => (
   <a
     href="#oferta"
-    className={`btn-cta inline-block rounded-xl px-10 py-5 text-lg font-bold text-white tracking-wide shadow-lg ${className}`}
+    className={`btn-cta inline-block rounded-xl px-8 py-5 text-base sm:text-lg font-bold text-white tracking-wide shadow-lg whitespace-nowrap ${className}`}
   >
     {children}
   </a>
@@ -97,7 +97,7 @@ export default function Home() {
           </p>
 
           <div className="mt-10">
-            <CTAButton>QUERO ME TORNAR UM LÍDER DE VERDADE &rarr;</CTAButton>
+            <CTAButton>QUERO SER UM LÍDER DE VERDADE &rarr;</CTAButton>
           </div>
         </div>
       </section>
