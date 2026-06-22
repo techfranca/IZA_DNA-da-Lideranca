@@ -162,7 +162,7 @@ export default function Home() {
             desenvolver para ter sucesso
           </SectionTitle>
           <p className="mx-auto mt-5 max-w-2xl text-center text-lg text-white/80">
-            <span className="text-white font-semibold underline">
+            <span className="underline">
               3 módulos cobrindo as competências essenciais de liderança,
               exercícios práticos e ferramentas aplicáveis
             </span>{" "}
