@@ -1,4 +1,5 @@
 import { Accordion } from "./components/Accordion";
+import { ContentModules } from "./components/ContentModules";
 
 const CHECKOUT_URL = "#"; // TODO: substituir pelo link de checkout Hotmart
 
@@ -345,27 +346,7 @@ export default function Home() {
             3 módulos, 9 aulas gravadas de 20-30 min, exercícios práticos e ferramentas aplicáveis
           </p>
 
-          <div className="mt-10 space-y-3">
-            {[
-              { num: "01", title: "Você foi promovido. E agora?", desc: "O erro mais comum dos novos líderes · A diferença entre ser técnico e ser líder · O verdadeiro papel da liderança" },
-              { num: "02", title: "Os 4 alinhamentos que todo líder precisa fazer", desc: "O que precisa ser feito · Quem fará · Até quando · Como saberemos que deu certo" },
-              { num: "03", title: "Delegar não é abandonar", desc: "Por que os líderes centralizam · Os prejuízos de fazer tudo sozinho · Como acompanhar sem microgerenciar" },
-              { num: "04", title: "O poder das conexões na liderança", desc: "Por que algumas equipes entregam mais · Confiança como base · Os erros que afastam os liderados" },
-              { num: "05", title: "Comunicação que aproxima", desc: "Comunicação assertiva · Escuta ativa · Regra 70/30 · Como garantir entendimento" },
-              { num: "06", title: "Feedback e reconhecimento", desc: "O que é e o que não é feedback · Como corrigir sem desmotivar · Modelo: Situação → Comportamento → Impacto → Próximo passo" },
-              { num: "07", title: "O líder que você é hoje", desc: "O impacto do seu comportamento · Como seus pontos fortes influenciam a equipe · A importância do autoconhecimento" },
-              { num: "08", title: "Inteligência emocional na prática", desc: "Como reconhecer emoções · Como evitar reações impulsivas · Como agir sob pressão em situações reais" },
-              { num: "09", title: "Mapa dos Pontos Fortes e Gaps", desc: "Ferramenta Balança da Liderança · Identificação de forças e gaps · Plano de Evolução com ações para os próximos 30 dias" },
-            ].map((aula) => (
-              <Accordion key={aula.num} number={aula.num} title={aula.title}>
-                <p className="text-sm text-white/70">{aula.desc}</p>
-              </Accordion>
-            ))}
-          </div>
-
-          <p className="mt-8 text-center text-sm text-white/40">
-            + Exercícios práticos ao final de cada módulo e ferramentas exclusivas aplicáveis no dia a dia
-          </p>
+          <ContentModules />
 
           <div className="mt-8 text-center">
             <CTAButton>QUERO TER ACESSO AO CONTEÚDO &rarr;</CTAButton>
