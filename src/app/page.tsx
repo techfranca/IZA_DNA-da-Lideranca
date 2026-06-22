@@ -94,7 +94,7 @@ export default function Home() {
 
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
             Tenha acesso ao método completo que já{" "}
-            <span className="text-gold font-semibold underline">
+            <span className="font-semibold underline">
               transformou mais de 500 líderes em todo o Brasil.
             </span>
           </p>
