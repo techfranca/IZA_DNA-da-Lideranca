@@ -26,7 +26,7 @@ const CTAButton = ({
 }) => (
   <a
     href="#oferta"
-    className={`btn-cta inline-block rounded-xl px-8 py-5 text-base sm:text-lg font-bold text-white tracking-wide shadow-lg whitespace-nowrap ${className}`}
+    className={`btn-cta inline-block rounded-xl px-8 py-4 text-sm sm:text-base font-bold text-white tracking-wide shadow-lg whitespace-nowrap ${className}`}
   >
     {children}
   </a>
