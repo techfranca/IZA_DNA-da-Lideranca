@@ -363,40 +363,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════ 6. DEPOIMENTOS ═══════ */}
-      <section className="relative w-full bg-dark">
-        <div className="relative mx-auto max-w-5xl px-6 py-10 md:py-12">
-
-          <SectionTitle>
-            O que dizem os líderes que{" "}
-            <span className="text-gold">já passaram pela Izabela</span>
-          </SectionTitle>
-          <p className="mt-4 text-center text-sm text-white/50">
-            Prints reais de profissionais que foram desenvolvidos por ela
-          </p>
-
-          <Depoimentos />
-
-          <div className="mt-12 text-center">
-            <CTAButton>QUERO O MESMO RESULTADO &rarr;</CTAButton>
-          </div>
-        </div>
-      </section>
-
-      {/* ═══════ 6. PARA QUEM É ═══════ */}
+      {/* ═══════ 6. O QUE VOCÊ SERÁ CAPAZ DE FAZER ═══════ */}
       <section className="relative w-full bg-dark-alt">
         <div className="relative mx-auto max-w-3xl px-6 py-10 md:py-12">
 
           <SectionTitle>
-            Para quem é <span className="text-gold">este curso</span>
+            O que você será capaz de fazer{" "}
+            <span className="text-gold">após o curso</span>
           </SectionTitle>
 
           <div className="mt-12 space-y-4">
             {[
-              "Líderes, coordenadores e supervisores que foram promovidos sem preparo técnico em gestão de pessoas",
-              "Profissionais que sabem que são bons tecnicamente, mas precisam de método pra liderar",
-              "Quem já tentou liderar no improviso e sente que está perdendo o controle",
-              "Quem quer conquistar o respeito do time e da diretoria pela competência, não pelo cargo",
+              "Delegar sem microgerenciar",
+              "Dar feedback sem gerar conflitos",
+              "Conquistar mais respeito da equipe",
+              "Desenvolver autonomia nos colaboradores",
+              "Lidar melhor com situações de pressão",
+              "Liderar com mais segurança e confiança",
             ].map((item, i) => (
               <div
                 key={i}
@@ -424,7 +407,27 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════ 7. OFERTA ═══════ */}
+      {/* ═══════ 7. DEPOIMENTOS ═══════ */}
+      <section className="relative w-full bg-dark">
+        <div className="relative mx-auto max-w-5xl px-6 py-10 md:py-12">
+
+          <SectionTitle>
+            O que dizem os líderes que{" "}
+            <span className="text-gold">já passaram pela Izabela</span>
+          </SectionTitle>
+          <p className="mt-4 text-center text-sm text-white/50">
+            Prints reais de profissionais que foram desenvolvidos por ela
+          </p>
+
+          <Depoimentos />
+
+          <div className="mt-12 text-center">
+            <CTAButton>QUERO O MESMO RESULTADO &rarr;</CTAButton>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════ 8. OFERTA ═══════ */}
       <section className="relative w-full bg-dark py-10 sm:py-14" id="oferta">
         <div className="max-w-md mx-auto px-4 sm:px-6">
           <div className="relative rounded-2xl border-2 border-gold/30 bg-gradient-to-b from-white/[0.04] to-white/[0.02] p-6 sm:p-8 glow-gold">
@@ -527,7 +530,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════ 8. FAQ ═══════ */}
+      {/* ═══════ 9. FAQ ═══════ */}
       <section className="relative w-full bg-dark-alt">
         <div className="relative mx-auto max-w-3xl px-6 py-10 md:py-12">
 
@@ -570,7 +573,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ═══════ 9. CTA FINAL ═══════ */}
+      {/* ═══════ 10. CTA FINAL ═══════ */}
       <section className="relative w-full bg-dark">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_60%_at_50%_50%,rgba(201,154,17,0.1),transparent)]" />
         <div className="relative mx-auto max-w-3xl px-6 py-10 text-center md:py-12">
