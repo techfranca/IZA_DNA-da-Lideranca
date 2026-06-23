@@ -541,28 +541,32 @@ export default function Home() {
           <div className="mt-12 space-y-3">
             {[
               {
-                q: "Pra quem é esse curso?",
-                a: "Para líderes, coordenadores e supervisores que foram promovidos sem preparo técnico em gestão de pessoas. Se você sente que precisa de um método pra liderar com segurança, esse curso é pra você.",
+                q: "Funciona para quem acabou de ser promovido?",
+                a: "Sim! O curso foi pensado justamente pra quem está começando ou foi jogado de paraquedas num cargo de liderança e precisa de método pra liderar com segurança.",
               },
               {
-                q: "Preciso ter experiência como líder?",
-                a: "Não. O curso foi pensado justamente pra quem está começando ou foi jogado de paraquedas num cargo de liderança.",
+                q: "Funciona para supervisores e coordenadores?",
+                a: "Com certeza. O método DNA foi criado para líderes em qualquer nível — supervisores, coordenadores, gerentes — que precisam gerir pessoas e gerar resultados.",
               },
               {
-                q: "Qual o formato das aulas?",
-                a: "São 9 aulas gravadas de 20 a 30 minutos, divididas em 3 módulos, com exercício prático ao final de cada módulo. Você assiste no seu ritmo.",
+                q: "Preciso ter experiência em liderança?",
+                a: "Não. O curso parte do zero e te dá o método completo para liderar com clareza, mesmo que você nunca tenha liderado antes.",
               },
               {
-                q: "Por quanto tempo tenho acesso?",
+                q: "Quanto tempo demora para concluir?",
+                a: "São 9 aulas de 20 a 30 minutos, divididas em 3 módulos. Você pode concluir em poucos dias assistindo no seu ritmo.",
+              },
+              {
+                q: "Receberei certificado?",
+                a: "Sim, ao concluir o curso você recebe um certificado de conclusão emitido pela plataforma.",
+              },
+              {
+                q: "Por quanto tempo terei acesso?",
                 a: "Você terá acesso por 1 ano a partir da data da compra.",
               },
               {
                 q: "Como funciona a garantia?",
                 a: "Você tem 7 dias para assistir. Se não gostar, basta solicitar o reembolso pela própria plataforma Hotmart. Devolvemos 100% do valor, sem perguntas.",
-              },
-              {
-                q: "Como acesso o curso depois da compra?",
-                a: "Após a confirmação do pagamento, você recebe um e-mail com o login e senha para acessar a área de membros na Hotmart.",
               },
             ].map((faq, i) => (
               <Accordion key={i} title={faq.q}>
@@ -581,16 +585,13 @@ export default function Home() {
             className="text-3xl font-bold text-white md:text-4xl"
             style={{ fontFamily: "var(--font-playfair), serif" }}
           >
-            Sem método, você é só mais um chefe.
-            <br />
-            <span className="gradient-text">
-              Com o DNA, você vira o líder que todo time precisa.
-            </span>
+            Você não precisa aprender liderança{" "}
+            <span className="gradient-text">na tentativa e erro.</span>
           </h2>
           <p className="mx-auto mt-6 max-w-xl text-lg text-white/80">
-            Por menos de{" "}
-            <span className="text-gold font-semibold">R$ 1 por dia</span>, você
-            tem acesso ao método que vai transformar a forma como você lidera.
+            O DNA da Liderança vai mostrar o caminho para desenvolver a{" "}
+            <span className="text-gold font-semibold">confiança, a clareza e a segurança</span>{" "}
+            que todo líder precisa para gerar resultados através das pessoas.
           </p>
 
           <div className="mt-10">
