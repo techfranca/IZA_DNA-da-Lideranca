@@ -99,7 +99,7 @@ export default function Home() {
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
             Tenha acesso ao método completo que já{" "}
             <span className="font-semibold underline">
-              transformou mais de 500 líderes em todo o Brasil.
+              transformou mais de 1.000 líderes em todo o Brasil.
             </span>
           </p>
 
@@ -170,7 +170,7 @@ export default function Home() {
               3 módulos cobrindo as competências essenciais de liderança,
               exercícios práticos e ferramentas aplicáveis
             </span>{" "}
-            — criado por quem já transformou mais de 500 líderes em pequenas e
+            — criado por quem já transformou mais de 1.000 líderes em pequenas e
             grandes empresas.
           </p>
 
@@ -324,10 +324,10 @@ export default function Home() {
                   "Psicóloga e Mestra em Psicologia pela UFC",
                   "Mais de 10 anos desenvolvendo líderes em pequenas e grandes empresas",
                   "Fundadora da IH Consultoria e Desenvolvimento Humano",
-                  "Mentora de executivos e gestores",
-                  "Congressista internacional em Psicologia Positiva (Portugal)",
+                  "Mentora de executivos",
+                  "Palestrante internacional",
                   "Co-autora de 3 livros publicados no Brasil e em Portugal",
-                  "+500 líderes transformados",
+                  "+1.000 líderes transformados",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckIcon />
