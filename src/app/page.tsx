@@ -473,7 +473,7 @@ export default function Home() {
                   },
                   {
                     title: "Ferramentas exclusivas",
-                    desc: "Balança da Liderança + Plano de Evolução",
+                    desc: "Ferramentas Práticas de Liderança",
                     price: "R$ 50",
                   },
                 ].map((item, i) => (
