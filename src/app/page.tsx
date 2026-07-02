@@ -2,7 +2,7 @@ import { Accordion } from "./components/Accordion";
 import { ContentModules } from "./components/ContentModules";
 import { Depoimentos } from "./components/Depoimentos";
 
-const CHECKOUT_URL = "#"; // TODO: substituir pelo link de checkout Hotmart
+const CHECKOUT_URL = "https://pay.hotmart.com/B106563600L?off=p8uoxz77&checkoutMode=10";
 
 /* ── tiny reusable pieces ── */
 const CheckIcon = () => (
