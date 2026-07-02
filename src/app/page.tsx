@@ -352,7 +352,7 @@ export default function Home() {
             <span className="text-gold">dentro do DNA</span>
           </SectionTitle>
           <p className="mt-4 text-center text-base text-white/50 max-w-2xl mx-auto">
-            3 módulos, 9 aulas gravadas de 20-30 min, exercícios práticos e ferramentas aplicáveis
+            3 módulos, 3 aulas gravadas de 20-30 min, exercícios práticos e ferramentas aplicáveis
           </p>
 
           <ContentModules />
@@ -463,7 +463,7 @@ export default function Home() {
                 {[
                   {
                     title: "Curso completo DNA da Liderança",
-                    desc: "3 módulos · 9 aulas gravadas",
+                    desc: "3 módulos · 3 aulas gravadas",
                     price: "R$ 97",
                   },
                   {
@@ -554,7 +554,7 @@ export default function Home() {
               },
               {
                 q: "Quanto tempo demora para concluir?",
-                a: "São 9 aulas de 20 a 30 minutos, divididas em 3 módulos. Você pode concluir em poucos dias assistindo no seu ritmo.",
+                a: "São 3 aulas de 20 a 30 minutos, divididas em 3 módulos. Você pode concluir em poucos dias assistindo no seu ritmo.",
               },
               {
                 q: "Receberei certificado?",
