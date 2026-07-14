@@ -48,7 +48,11 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
-      <head />
+      <head>
+        <link rel="dns-prefetch" href="https://connect.facebook.net" />
+        <link rel="dns-prefetch" href="https://pay.hotmart.com" />
+        <link rel="preconnect" href="https://connect.facebook.net" crossOrigin="anonymous" />
+      </head>
       <body className="min-h-full flex flex-col font-sans">
         {children}
         <Script id="fb-pixel" strategy="afterInteractive">
